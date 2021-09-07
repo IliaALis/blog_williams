@@ -1,6 +1,6 @@
 from django.contrib.auth import get_user_model
-from django.db import models
-from django.http import response
+# from django.db import models
+# from django.http import response
 from django.test import TestCase
 from django.urls import reverse
 
@@ -17,7 +17,7 @@ class BlogTests(TestCase):
         
         self.post = Post.objects.create(
             title='A good title',
-            body='nice body content',
+            body='Nice body content',
             author=self.user,
     )
     
@@ -38,7 +38,7 @@ class BlogTests(TestCase):
         
     def test_post_detail_view(self):
         response = self.client.get('/post/1/')
-        no_response = self.client.get('/post/100000')
+        no_response = self.client.get('/post/100000/')
         self.assertEqual(response.status_code, 200)
         self.assertEqual(no_response.status_code, 404)
         self.assertContains(response, 'A good title')
