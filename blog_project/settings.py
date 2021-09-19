@@ -30,10 +30,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
-<<<<<<< HEAD
-    'accounts.apps.AccountsConfig',
-=======
->>>>>>> bb124a03846794db2f46147dd44dd324bc77ea60
+    #'accounts.apps.AccountsConfig',
+    'accounts'
 ]
 
 MIDDLEWARE = [
@@ -125,9 +123,6 @@ STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static')]
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-<<<<<<< HEAD
 
 LOGIN_REDIRECT_URL = 'home'
 LOGOUT_REDIRECT_URL = 'home'
-=======
->>>>>>> bb124a03846794db2f46147dd44dd324bc77ea60
