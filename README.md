@@ -4,6 +4,7 @@
 ```bash
 pip install venv venv
 .\venv\Scripts\activate.bat
+(source venv/bin/activate)
 ```
 
 ## Install dependencies
