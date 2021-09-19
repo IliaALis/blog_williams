@@ -31,7 +31,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
 <<<<<<< HEAD
-    'accounts',
+    'accounts.apps.AccountsConfig',
 =======
 >>>>>>> bb124a03846794db2f46147dd44dd324bc77ea60
 ]
